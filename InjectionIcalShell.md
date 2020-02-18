@@ -1,3 +1,5 @@
+CVE-2020-9269
+
 Once you have extracted the admin hash, you can now use that to get command execution on the machine through another SQL Injection.
 
 Save the admin hash and insert it into SQLMap as such: 
