@@ -1,3 +1,5 @@
+CVE-2020-9266
+
 The SOPlanning website is vulnerable to CSRF that would allow for the admin password to be changed:
 
 CSRF POC:
