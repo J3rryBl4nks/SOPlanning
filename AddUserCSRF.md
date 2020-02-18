@@ -1,3 +1,5 @@
+CVE-2020-9267
+
 The SOPlanning web application is vulnerable to CSRF that enables a user to be added.
 
 CSRF POC:
