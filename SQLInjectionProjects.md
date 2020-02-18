@@ -1,3 +1,5 @@
+CVE-2020-9268
+
 The SOPlanning 1.45 application is vulnerable to SQL Injection which can be leveraged into getting the information for the users table.
 
 Capture the request in Burpsuite:
